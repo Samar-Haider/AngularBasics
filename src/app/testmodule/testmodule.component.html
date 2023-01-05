@@ -1,0 +1,13 @@
+<p>{{name}} works!</p>
+<button [disabled]="buttonSettings"  type="button">Click Me!</button>
+
+
+<h1 class="text-success"> Heading One</h1>
+<h2 [ngClass]="setMultipleProperties"> Heading Two</h2>
+<h3> Heading Three</h3>
+<h4 [class.error] = "hasError"> Heading Four</h4>
+
+<button (click)="onclick($event)">Event Button</button> <br>    
+
+<input #inputText type="text">
+<button (click)="logInputValue(inputText.value)">  Logger  </button>
