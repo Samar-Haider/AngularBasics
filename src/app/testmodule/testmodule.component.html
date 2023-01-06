@@ -11,11 +11,34 @@
 <button (click)="onclick($event)">Event Button</button> <br>    
 <!-- Event Binding -->
 
-<!-- One Way Binding -->
+<!-- One Way Binding With Template Reference Variable-->
 <input #inputText type="text">
 <button (click)="logInputValue(inputText.value)">  Logger  </button> <br>   
-<!-- One Way Binding -->
+<!-- One Way Binding With Template Reference Variable -->
 
 <!-- Two Way Binding -->
 <input [(ngModel)] = "textBoxValue" type="text"> {{textBoxValue}}
 <!-- Two Way Binding -->
+
+<br><br>
+
+<!-- ng if-else block SYNTAX-1 -->
+<h1 *ngIf="showElement; else  elseblock">    
+Samar Haider
+</h1>
+
+<ng-template #elseblock>
+    <h1> Syed Jafri </h1>
+</ng-template>
+<!-- ng if-else block SYNTAX-1 -->
+
+<!-- ng if-then-else syntax-2 -->
+<h1 *ngIf="showElement; then thenblockS2; else  elseblock">BLOCK TO BE RENDERED</h1>
+<ng-template #thenblockS2>   
+<h1> THEN BLOCK </h1>
+</ng-template>
+
+<ng-template #elseBlockS2>   `
+    <h1> ELSE BLOCK </h1>
+</ng-template>
+<!-- ng if-then-else syntax-2 -->

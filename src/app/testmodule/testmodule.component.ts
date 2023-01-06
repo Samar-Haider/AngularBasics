@@ -14,6 +14,7 @@ public hasError = true;
 public isImportant = true;
 public isMessage = true;
 public textBoxValue = "";
+public showElement = false;
 public setMultipleProperties =
 {
   "text-success": !this.hasError,
