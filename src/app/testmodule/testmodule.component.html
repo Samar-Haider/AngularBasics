@@ -7,7 +7,15 @@
 <h3> Heading Three</h3>
 <h4 [class.error] = "hasError"> Heading Four</h4>
 
+<!-- Event Binding -->
 <button (click)="onclick($event)">Event Button</button> <br>    
+<!-- Event Binding -->
 
+<!-- One Way Binding -->
 <input #inputText type="text">
-<button (click)="logInputValue(inputText.value)">  Logger  </button>
+<button (click)="logInputValue(inputText.value)">  Logger  </button> <br>   
+<!-- One Way Binding -->
+
+<!-- Two Way Binding -->
+<input [(ngModel)] = "textBoxValue" type="text"> {{textBoxValue}}
+<!-- Two Way Binding -->

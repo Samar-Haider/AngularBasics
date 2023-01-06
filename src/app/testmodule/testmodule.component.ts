@@ -5,12 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './testmodule.component.html',
   styleUrls: ['./testmodule.component.css']
 })
+
+
 export class TestmoduleComponent {
 public name = 'Angular basics for Samar'
 public buttonSettings = true;
 public hasError = true;
 public isImportant = true;
 public isMessage = true;
+public textBoxValue = "";
 public setMultipleProperties =
 {
   "text-success": !this.hasError,
