@@ -15,6 +15,8 @@ public isImportant = true;
 public isMessage = true;
 public textBoxValue = "";
 public showElement = false;
+public color = 'red';
+public colors = ["red","blue","yellow",'green'];
 public setMultipleProperties =
 {
   "text-success": !this.hasError,

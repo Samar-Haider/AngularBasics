@@ -22,6 +22,7 @@
 
 <br><br>
 
+<!-- STRUCTURAL DIRECTIVES -->
 <!-- ng if-else block SYNTAX-1 -->
 <h1 *ngIf="showElement; else  elseblock">    
 Samar Haider
@@ -42,3 +43,23 @@ Samar Haider
     <h1> ELSE BLOCK </h1>
 </ng-template>
 <!-- ng if-then-else syntax-2 -->
+
+<!-- Switch statements -->
+<div [ngSwitch]="color">
+<div *ngSwitchCase="'red'">You picked {{color}} color</div>
+<div *ngSwitchCase="'blue'">You picked {{color}} color</div>
+<div *ngSwitchCase="'yellow'">You picked {{color}} color</div>
+<div *ngSwitchDefault> Pick Again!   </div>       
+</div>
+<!-- Switch statements -->
+
+<!-- for loop -->
+<!-- <div *ngFor="let color of colors; index as i">   
+    <h2>{{i}}: {{color}}</h2>
+</div> -->
+
+<div *ngFor="let color of colors; first as f; last as l">
+    <h2>{{f}} {{l}}: {{color}}</h2>
+</div>
+<!-- for loop -->
+<!-- STRUCTURAL DIRECTIVES -->
