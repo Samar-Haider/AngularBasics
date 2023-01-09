@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 
 
 export class TestmoduleComponent {
+public myId = "Samar42101";
+public userName = "Samar jafri";
 public name = 'Angular basics for Samar'
 public buttonSettings = true;
 public hasError = true;
@@ -33,5 +35,10 @@ public onclick(event: any)
 public logInputValue(value: any)
 {
   console.log(value)
+}
+
+GreetUser()
+{
+  return "Hello " + this.userName;
 }
 }

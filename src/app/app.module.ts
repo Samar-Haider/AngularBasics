@@ -5,11 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestmoduleComponent } from './testmodule/testmodule.component';
 import { FormsModule } from '@angular/forms';
-
+import { ComponentIteractionTestComponent } from './component-iteraction-test/component-iteraction-test.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TestmoduleComponent
+    TestmoduleComponent,
+    ComponentIteractionTestComponent
   ],
   imports: [
     BrowserModule,
@@ -19,4 +20,5 @@ import { FormsModule } from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+}
