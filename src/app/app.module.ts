@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { TestmoduleComponent } from './testmodule/testmodule.component';
 import { FormsModule } from '@angular/forms';
 import { ComponentIteractionTestComponent } from './component-iteraction-test/component-iteraction-test.component';
+import { PipesTestComponent } from './pipes-test/pipes-test.component';
 @NgModule({
   declarations: [
     AppComponent,
     TestmoduleComponent,
-    ComponentIteractionTestComponent
+    ComponentIteractionTestComponent,
+    PipesTestComponent
   ],
   imports: [
     BrowserModule,
