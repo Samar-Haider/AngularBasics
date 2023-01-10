@@ -9,7 +9,8 @@ import { ComponentIteractionTestComponent } from './component-iteraction-test/co
 import { PipesTestComponent } from './pipes-test/pipes-test.component';
 import { EmployeeServiceService } from './employee-service.service';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
-import { EmployeeDetailComponent } from './employee-detail/employee-detail.component'
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [EmployeeServiceService],
   bootstrap: [AppComponent]
