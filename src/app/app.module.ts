@@ -7,19 +7,24 @@ import { TestmoduleComponent } from './testmodule/testmodule.component';
 import { FormsModule } from '@angular/forms';
 import { ComponentIteractionTestComponent } from './component-iteraction-test/component-iteraction-test.component';
 import { PipesTestComponent } from './pipes-test/pipes-test.component';
+import { EmployeeServiceService } from './employee-service.service';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component'
 @NgModule({
   declarations: [
     AppComponent,
     TestmoduleComponent,
     ComponentIteractionTestComponent,
-    PipesTestComponent
+    PipesTestComponent,
+    EmployeeListComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmployeeServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
