@@ -1,6 +1,18 @@
 <p>employee-list works!</p>
 
-<ul *ngFor="let emp of employees">   
+<!-- <ul *ngFor="let emp of employees">   
 <li>{{emp.name}}</li>
-</ul>
+</ul> -->
  
+
+  <h1>  Departments </h1>
+  <table>   
+    <tr>    
+        <th> ID</th>
+        <th> NAME</th>
+    </tr>
+    <tr *ngFor="let d of departmentData.departments">    
+        <td> {{d.id}}   </td>
+        <td> {{d.name}}   </td>
+    </tr>
+  </table>
