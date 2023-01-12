@@ -21,9 +21,8 @@ export class EmployeeListComponent implements OnInit {
   this._employeeService.GetDepartments().subscribe(data => {
     // console.warn("data",data)
     // console.log(data);
-    debugger;
     this.departmentData = data;
     console.log(this.departmentData);
-  })
+  });
   }
 }

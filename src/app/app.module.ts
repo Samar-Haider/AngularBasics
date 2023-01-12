@@ -4,7 +4,7 @@ import { AppRoutingModule, routingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestmoduleComponent } from './testmodule/testmodule.component';
 import { FormsModule } from '@angular/forms';
-import { ComponentIteractionTestComponent } from './component-iteraction-test/component-iteraction-test.component';
+import { ComponentIteractionTestComponent } from './component-interaction-test/component-iteraction-test.component';
 import { PipesTestComponent } from './pipes-test/pipes-test.component';
 import { EmployeeServiceService } from './employee-service.service';
 import {HttpClientModule} from '@angular/common/http';
