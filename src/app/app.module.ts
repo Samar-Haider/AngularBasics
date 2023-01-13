@@ -9,6 +9,7 @@ import { PipesTestComponent } from './pipes-test/pipes-test.component';
 import { EmployeeServiceService } from './employee-service.service';
 import {HttpClientModule} from '@angular/common/http';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { DepartmentComponent } from './department/department.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     ComponentIteractionTestComponent,
     PipesTestComponent,
     routingComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    DepartmentComponent
   ],
   imports: [
     BrowserModule,

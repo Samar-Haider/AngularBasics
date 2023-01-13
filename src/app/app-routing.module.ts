@@ -5,7 +5,7 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/departments', pathMatch:'full'},
+  {path: '', redirectTo: '/departments', pathMatch:'full'}, //default route
   {path: 'departments', component:EmployeeListComponent},
   {path:'employees',component:EmployeeDetailComponent},
   {path:'**',component:PagenotfoundComponent} //Should always be placed at the end of all the routes
