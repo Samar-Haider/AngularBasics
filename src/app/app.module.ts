@@ -8,6 +8,7 @@ import { ComponentIteractionTestComponent } from './component-interaction-test/c
 import { PipesTestComponent } from './pipes-test/pipes-test.component';
 import { EmployeeServiceService } from './employee-service.service';
 import {HttpClientModule} from '@angular/common/http';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {HttpClientModule} from '@angular/common/http';
     TestmoduleComponent,
     ComponentIteractionTestComponent,
     PipesTestComponent,
-    routingComponent
+    routingComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
