@@ -1,7 +1,7 @@
 
 <h1 style="text-align: center;color:steelblue">Department List!</h1>
 <ul>    
-    <li [class.Selected] = "isSelected(d)"  *ngFor="let d of lstDepartments">    
-        <span (click)="onSelect(d)"> {{d.Id}} {{d.Name}}</span> 
+    <li  *ngFor="let d of lstDepartments">    
+        <span [class.Selected]="isSelected(d)" (click)="onSelect(d)"> {{d.Id}} {{d.Name}}</span> 
     </li>
 </ul>

@@ -37,7 +37,12 @@ this._router.navigate(['/lstdepartments',d.Id]);
 
   isSelected(department:any)
   {
-    return department.id == this.selectedId;
+    debugger;
+    if(parseInt(department.Id) === parseInt(this.selectedId))
+    {
+      return true;
+    }
+    else return false;
   }
 
 
