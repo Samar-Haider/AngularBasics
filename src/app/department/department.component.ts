@@ -19,6 +19,9 @@ public lstDepartments =
 
 onSelect(d:any)
 {
+  //To pass a parameter while navigating we make use of the router service. It has a navigate method to which we can pass a link parameters array.
+  //To read the paramter we make use of the activated route service. We use the snapshot of the current route and use the param api to read the required 
+  //parameter. We can then bind it to a view using interpolation
 this._router.navigate(['/lstdepartments',d.Id]);
 }
 }
