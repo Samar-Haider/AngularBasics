@@ -39,4 +39,8 @@ export class DepartmentDetailComponent {
     let selectedId = this.departmentId? this.departmentId:null;
     this._router.navigate(['/lstdepartments',{id : selectedId }]);
   }
+  onchildRouteClick()
+  {
+    this._router.navigate(['overview'], {relativeTo: this._activatedRoute}); //this is a relative route
+  }
 }

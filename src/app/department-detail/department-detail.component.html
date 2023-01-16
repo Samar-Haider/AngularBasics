@@ -2,6 +2,13 @@
 
 <h3> Selected Department ID: {{departmentId}}</h3>
 
+<router-outlet> </router-outlet>
+
+<p> 
+<button (click)="onchildRouteClick()">Department Overview</button>
+</p>
+
+
 <span (click)="previous()"> previous </span> <span (click)="next()"> next </span>
 <div>   
     <span (click)="goBack()">Go Back</span>

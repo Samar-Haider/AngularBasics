@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { DepartmentComponent } from './department/department.component';
 import { DepartmentDetailComponent } from './department-detail/department-detail.component';
+import { DepartmentOverviewComponent } from './department-overview/department-overview.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DepartmentDetailComponent } from './department-detail/department-detail
     routingComponent,
     PagenotfoundComponent,
     DepartmentComponent,
-    DepartmentDetailComponent
+    DepartmentDetailComponent,
+    DepartmentOverviewComponent
   ],
   imports: [
     BrowserModule,
