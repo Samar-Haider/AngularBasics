@@ -30,8 +30,12 @@ export class DepartmentDetailComponent {
   }
   next()
   {
-
     let nextId = parseInt(this.departmentId) + 1;
     this._router.navigate(['/lstdepartments',nextId]);
+  }
+  goBack()
+  {
+    let selectedId = this.departmentId? this.departmentId:null;
+    this._router.navigate(['/lstdepartments',{id : selectedId }]);
   }
 }
