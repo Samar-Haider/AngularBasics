@@ -10,6 +10,7 @@ import { EmployeeServiceService } from './employee-service.service';
 import {HttpClientModule} from '@angular/common/http';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { DepartmentComponent } from './department/department.component';
+import { DepartmentDetailComponent } from './department-detail/department-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DepartmentComponent } from './department/department.component';
     PipesTestComponent,
     routingComponent,
     PagenotfoundComponent,
-    DepartmentComponent
+    DepartmentComponent,
+    DepartmentDetailComponent
   ],
   imports: [
     BrowserModule,

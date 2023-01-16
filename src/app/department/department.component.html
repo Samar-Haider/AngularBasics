@@ -1,1 +1,9 @@
 <p>department works!</p>
+
+<ul>    
+    <li *ngFor="let d of lstDepartments">    
+
+        <span (click)="onSelect(d)"> {{d.Id}} {{d.Name}}</span> 
+
+    </li>
+</ul>
