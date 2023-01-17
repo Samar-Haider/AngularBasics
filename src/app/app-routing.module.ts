@@ -16,12 +16,12 @@ const routes: Routes = [
   {path : 'departments', component:EmployeeListComponent},
   {path : 'employees',component:EmployeeDetailComponent},
   {path : 'lstdepartments',component:DepartmentComponent},
-  {path : './testmodule/testmodule.component', component:TestmoduleComponent},
-  {path : './component-interaction-test/component-iteraction-test.component', component:ComponentIteractionTestComponent},
-  {path : './pipes-test/pipes-test.component', component:PipesTestComponent},
-  {path : './department/department.component', component:DepartmentComponent},
-  {path : './department-overview/department-overview.component', component:DepartmentOverviewComponent},
-  {path : './template-driven-forms1/template-driven-forms1.component', component:TemplateDrivenForms1Component},
+  {path : 'testmodule', component:TestmoduleComponent},
+  {path : 'component-iteraction-test', component:ComponentIteractionTestComponent},
+  {path : 'pipes-test', component:PipesTestComponent},
+  {path : 'department', component:DepartmentComponent},
+  {path : 'department-overview', component:DepartmentOverviewComponent},
+  {path : 'template-driven-forms1', component:TemplateDrivenForms1Component},
   {path : 'lstdepartments/:id',component:DepartmentDetailComponent,
   children: [
     {path : 'overview', component:DepartmentOverviewComponent}
