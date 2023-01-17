@@ -24,10 +24,9 @@ export class DepartmentDetailComponent {
   }
   previous()
   {
-
     let previousId = parseInt(this.departmentId) - 1;
-    // this._router.navigate(['/lstdepartments',previousId]);
-    this._router.navigate([previousId], {relativeTo: this._activatedRoute}); //this is a relative route
+    this._router.navigate(['/lstdepartments',previousId]);
+    // this._router.navigate([previousId], {relativeTo: this._activatedRoute}); //this is a relative route
   }
   next()
   {
