@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TemplateDrivenForms1Component {
 
+  topics = ["Angular","React","Vue"];
+
 }
