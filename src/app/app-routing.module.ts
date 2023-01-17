@@ -26,6 +26,7 @@ const routes: Routes = [
   children: [
     {path : 'overview', component:DepartmentOverviewComponent}
   ]},
+  
   {path : '**',component:PagenotfoundComponent} //Should always be placed at the end of all the routes
 ];
 
