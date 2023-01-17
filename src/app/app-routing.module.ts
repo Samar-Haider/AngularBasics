@@ -12,21 +12,21 @@ import { PipesTestComponent } from './pipes-test/pipes-test.component';
 import { TemplateDrivenForms1Component } from './template-driven-forms1/template-driven-forms1.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/departments', pathMatch:'full'}, //default route
-  {path: 'departments', component:EmployeeListComponent},
-  {path:'employees',component:EmployeeDetailComponent},
-  {path:'lstdepartments',component:DepartmentComponent},
+  {path : '', redirectTo: '/departments', pathMatch:'full'}, //default route
+  {path : 'departments', component:EmployeeListComponent},
+  {path : 'employees',component:EmployeeDetailComponent},
+  {path : 'lstdepartments',component:DepartmentComponent},
   {path : './testmodule/testmodule.component', component:TestmoduleComponent},
   {path : './component-interaction-test/component-iteraction-test.component', component:ComponentIteractionTestComponent},
   {path : './pipes-test/pipes-test.component', component:PipesTestComponent},
   {path : './department/department.component', component:DepartmentComponent},
   {path : './department-overview/department-overview.component', component:DepartmentOverviewComponent},
   {path : './template-driven-forms1/template-driven-forms1.component', component:TemplateDrivenForms1Component},
-  {path:'lstdepartments/:id',component:DepartmentDetailComponent,
+  {path : 'lstdepartments/:id',component:DepartmentDetailComponent,
   children: [
-    {path:'overview', component:DepartmentOverviewComponent}
+    {path : 'overview', component:DepartmentOverviewComponent}
   ]},
-  {path:'**',component:PagenotfoundComponent} //Should always be placed at the end of all the routes
+  {path : '**',component:PagenotfoundComponent} //Should always be placed at the end of all the routes
 ];
 
 @NgModule({
