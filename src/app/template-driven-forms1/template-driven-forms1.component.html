@@ -33,11 +33,11 @@
             </select><br>   
             <small class="text-danger" [class.d-none]="topic.untouched || topic.valid">Please Select Topic</small>
         </div> -->
-        <div class="form-group">
+        <div class="form-group"> 
             <label>Select Class</label><br> 
             <select (blur)="validateTopic(topic.value)" (change)="validateTopic(topic.value)" 
             [class.is-invalid]="blurTopicString && topic.touched" class="btn btn-secondary dropdown-toggle"  name="topic" #topic="ngModel" ngModel>
-                <option value="default" selected>I am interested in</option>
+                <option value="default"> I am interested in </option>
                 <option *ngFor="let topic of topics">{{topic}}</option>
             </select><br>   
             <small class="text-danger" [class.d-none]="!blurTopicString || topic.untouched">Please Select Topic</small>
@@ -75,7 +75,7 @@
                 <input type="text" class="form-control" name="postalcode" ngModel>
             </div>
         </div> -->
-        <button class="btn btn-primary" type="submit">Submit Form</button>
+        <button [disabled]="enrollmentForm.form.invalid || blurTopicString" class="btn btn-primary" type="submit">Submit Form</button>
     </form>
 
 </div>
