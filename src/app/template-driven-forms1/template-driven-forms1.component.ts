@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class TemplateDrivenForms1Component {
 
+  public blurTopicString = false;
   topics = ["Angular","React","Vue"];
+
+  validateTopic(topic:string){
+    if(topic === 'default'){ 
+      this.blurTopicString = true;
+    }
+    else{  this.blurTopicString = false;}
+  }
 
 }
