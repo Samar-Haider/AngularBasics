@@ -6,15 +6,23 @@
         <div class="form-group">
             <label>Name</label>
             <input type="text" required class="form-control" [class.is-invalid]="name.invalid && name.touched" #name="ngModel" name="username" ngModel>
-            {{name.pristine}}
+            <small class="text-danger" [class.d-none]="name.untouched || name.valid">Name is required</small><br>   
+            {{name.touched}} {{name.invalid}} 
         </div>
         <div class="form-group">
             <label>Email</label>
             <input type="text" class="form-control" name="email" ngModel>
         </div>
         <div class="form-group">
+            <!-- PHONE NUMBER FIELD HAS MULTIPLE VALIDATIONS -->
             <label>Phone</label>
-            <input type="text" #phone="ngModel" pattern="^\d{10}$" [class.is-invalid]="phone.invalid && phone.touched"  class="form-control" name="phone" ngModel>
+            <input type="text" #phone="ngModel" pattern="^\d{10}$" required [class.is-invalid]="phone.invalid && phone.touched"  class="form-control" name="phone" ngModel>
+            <!-- <small class="text-danger" [class.d-none]="phone.untouched || phone.valid">Phone number field is required and must have 10 digits</small><br> -->
+            <div *ngIf="phone.errors && (phone.invalid && phone.touched)">   
+                <small class="text-danger" *ngIf="phone.errors['required']">Phone number field is required</small>
+                <small class="text-danger" *ngIf="phone.errors['pattern']">Phone number field must have 10 digits</small>
+            </div>
+            {{phone.touched}} {{phone.invalid}} 
         </div>
         <div class="form-group">
             <label>Select Class</label><br> 
